@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { data } from './data';
 import './App.css';
+import { Filter } from './component/Filter/Filter';
+import { Header } from './component/Header/Header';
+import { Footer } from './component/Footer/Footer';
 
-function App() {
+
+export const App = () => {
+
+   //HOOK
+  const [Movies, setMovies] = useState(data)
+
+
+  //APP
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section className="app">
+      <Header />
+      <Filter movies={Movies} />
+      <Footer />
+    </section>
+  )
 }
-
-export default App;

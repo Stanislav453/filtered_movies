@@ -1,0 +1,29 @@
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 350px));
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.movies-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--box-background-color);
+    padding: 1em;
+    border-radius: 1rem;
+}
+
+.movies-item-title,.movies-item-tag  {
+    text-transform: capitalize;
+}
+
+.movies-item-desc {
+    line-height: 1.4em;
+}
+
+.movies-item-tag {
+    color: var(--box-background-color);
+}

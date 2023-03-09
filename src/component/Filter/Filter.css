@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.filter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.filter-text {
+  font-size: var(--filter-text-font-size);
+  text-transform: capitalize;
+}
+
+button {
+    background-color: var(--box-background-color);
+    outline: none;
+    border: none;
+    font-size: clamp( .6em, 2vw, 1em);
+    font-weight: 600;
+    padding: 1em 2em;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--general-font-color);
+    border-radius: 2rem;
+    transition: var(--background-color-transition);
+  
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-color);
+    transition: var(--background-color-transition);
+  }

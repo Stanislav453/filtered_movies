@@ -1,0 +1,26 @@
+
+.header {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--box-background-color);
+    font-size: var( --header-h1-font-size);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.header-underline {
+    width: 200px;
+    height: 5px;
+    background-color: var(--box-background-color);
+}
