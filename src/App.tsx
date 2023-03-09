@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { data } from './data';
-import './App.css';
-import { Filter } from './component/Filter/Filter';
-import { Header } from './component/Header/Header';
-import { Footer } from './component/Footer/Footer';
+import React, { useState } from "react";
+import { data } from "./data";
+import "./App.css";
+import { Filter } from "./component/Filter/Filter";
+import { Header } from "./component/Header/Header";
+import { Footer } from "./component/Footer/Footer";
 
 
 export const App = () => {
